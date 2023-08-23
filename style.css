@@ -1,0 +1,117 @@
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 40vw;
+    height: 100vh;
+    background-image: url('images/91111.jpg');
+    
+    background-size: 295%;
+    background-position: center;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+}
+#taskContainer{
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.left::-webkit-scrollbar {
+    width: 0em; /* Adjust the scrollbar width */
+  }
+  
+  .left::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+  }
+  
+  .left::-webkit-scrollbar-track {
+    background-color: transparent; /* Background color of the scrollbar track */
+  }
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 100vh;
+    background-image: url('images/metallic-gold-green-leaves-textured-background.jpg');
+    background-size: cover;
+}
+
+.todo-card {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 600px;
+  }
+
+  .todo-card label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .todo-card input[type="text"],
+  .todo-card textarea,
+  .todo-card input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .todo-card input[type="date"] {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .todo-card button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+
+  .todo-card button:hover {
+    background-color: #0056b3;
+  }
+
+@media (max-width:600px){
+    body{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .left{
+        width: 100vw;
+        background-size: 495%;
+        
+    }
+    #taskContainer{
+      width: 100vw;
+    }
+    .right{
+        width: 100vw;
+        height: 500px;
+        background-size: 150%;
+    }
+    .todo-card{
+        width: 350px;
+    }
+
+}
